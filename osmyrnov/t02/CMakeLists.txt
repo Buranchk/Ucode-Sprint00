@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16.3)
+set(CMAKE_CXX_STANDARD 17)
+set(PROJ_NAME "walletManager")
+project(${PROJ_NAME})
+set(SOURCE walletManager.cpp main.cpp)
+set(HEADER walletManager.h)
+add_executable(${PROJ_NAME} ${SOURCE} ${HEADER})
+set_target_properties(${PROJ_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY "../")
